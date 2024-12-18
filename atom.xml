@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>LemonTea&#39;s blog</title>
-  <icon>http://example.com/icon.png</icon>
+  <icon>http://alvin-tw.me/icon.png</icon>
   <subtitle>CyberSecurity/Network/developer/Linux</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://alvin-tw.me/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://alvin-tw.me/"/>
   <updated>2024-12-18T11:07:44.593Z</updated>
-  <id>http://example.com/</id>
+  <id>http://alvin-tw.me/</id>
   
   <author>
     <name>LemonTea</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>NHNC writeup</title>
-    <link href="http://example.com/2024/11/24/HNHC-Writeup/"/>
-    <id>http://example.com/2024/11/24/HNHC-Writeup/</id>
+    <link href="http://alvin-tw.me/2024/11/24/HNHC-Writeup/"/>
+    <id>http://alvin-tw.me/2024/11/24/HNHC-Writeup/</id>
     <published>2024-11-23T16:00:00.000Z</published>
     <updated>2024-12-18T11:07:44.593Z</updated>
     
@@ -37,14 +37,14 @@
     
     
     
-    <category term="CTF" scheme="http://example.com/tags/CTF/"/>
+    <category term="CTF" scheme="http://alvin-tw.me/tags/CTF/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2013/12/24/hello-world/"/>
-    <id>http://example.com/2013/12/24/hello-world/</id>
+    <link href="http://alvin-tw.me/2013/12/24/hello-world/"/>
+    <id>http://alvin-tw.me/2013/12/24/hello-world/</id>
     <published>2013-12-24T09:49:32.000Z</published>
     <updated>2024-12-18T08:29:13.883Z</updated>
     
