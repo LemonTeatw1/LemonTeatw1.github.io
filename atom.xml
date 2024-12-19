@@ -6,7 +6,7 @@
   <link href="http://alvin-tw.me/atom.xml" rel="self"/>
   
   <link href="http://alvin-tw.me/"/>
-  <updated>2024-12-18T11:07:44.593Z</updated>
+  <updated>2024-12-19T15:02:18.186Z</updated>
   <id>http://alvin-tw.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>THJCC-WriteUP</title>
+    <link href="http://alvin-tw.me/2024/12/19/THJCC-WriteUp/"/>
+    <id>http://alvin-tw.me/2024/12/19/THJCC-WriteUp/</id>
+    <published>2024-12-18T16:00:00.000Z</published>
+    <updated>2024-12-19T15:02:18.186Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;thjcc-writeup&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#thjcc-writeup&quot;&gt;&lt;/a&gt; THJCC writeup&lt;/h1&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+    <category term="CTF" scheme="http://alvin-tw.me/tags/CTF/"/>
+    
+  </entry>
   
   <entry>
     <title>NHNC writeup</title>
