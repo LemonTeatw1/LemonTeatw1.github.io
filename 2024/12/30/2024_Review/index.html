@@ -12,7 +12,7 @@
   <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"複製成功(*^▽^*)","fail":"複製失敗 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版權：本blog所有文章除特别聲明，均採用 BY-NC-SA 許可協議。轉載请註明出處！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
   
   <title>
-    NHNC writeup |
+    2024年末回顧 |
     
     LemonTea&#39;s blog
   </title>
@@ -27,17 +27,17 @@
 
   
   
-    <meta name="description" content="這次比賽因為是戰隊辦的比賽所以我擔任出題者 來看看我出的題目的官方解吧 &gt;W&lt;  Secret Rot13 Open the two file encrypte code 12345678910111213141516171819def encrypt(text, key):    encrypted_text &#x3D; &quot;&quot;    for i, char in enum">
+    <meta name="description" content="2024 年末回顧  Before All 我文筆很爛請見諒  正文 今年是個充實的一年會考完後就去日本玩了買了很多週邊還去看了五等分的展覽超開心的meow!!! 從日本回來後繼續學程式，然後被朋友找去開發網頁雖然我之前有寫過但還學到了超多東東順便宣傳一下 XDD https:&#x2F;&#x2F;harutoo.com 然後遇到了改變我人生的轉機 去找表哥時順道被推薦了SITCON camp 然後就一發不可收拾">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NHNC writeup">
-<meta property="og:url" content="http://alvin-tw.me/2024/11/24/HNHC-Writeup/index.html">
+<meta property="og:title" content="2024年末回顧">
+<meta property="og:url" content="http://alvin-tw.me/2024/12/30/2024_Review/index.html">
 <meta property="og:site_name" content="LemonTea&#39;s blog">
-<meta property="og:description" content="這次比賽因為是戰隊辦的比賽所以我擔任出題者 來看看我出的題目的官方解吧 &gt;W&lt;  Secret Rot13 Open the two file encrypte code 12345678910111213141516171819def encrypt(text, key):    encrypted_text &#x3D; &quot;&quot;    for i, char in enum">
+<meta property="og:description" content="2024 年末回顧  Before All 我文筆很爛請見諒  正文 今年是個充實的一年會考完後就去日本玩了買了很多週邊還去看了五等分的展覽超開心的meow!!! 從日本回來後繼續學程式，然後被朋友找去開發網頁雖然我之前有寫過但還學到了超多東東順便宣傳一下 XDD https:&#x2F;&#x2F;harutoo.com 然後遇到了改變我人生的轉機 去找表哥時順道被推薦了SITCON camp 然後就一發不可收拾">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-11-23T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-12-18T11:07:44.593Z">
+<meta property="article:published_time" content="2024-12-29T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-12-30T15:14:03.339Z">
 <meta property="article:author" content="LemonTea">
-<meta property="article:tag" content="CTF">
+<meta property="article:tag" content="life">
 <meta name="twitter:card" content="summary">
   
   
@@ -161,7 +161,7 @@
 <header id="header">
   
     
-      <img fetchpriority="high" src="https://images2.alphacoders.com/818/thumb-1920-818290.png" alt="NHNC writeup">
+      <img fetchpriority="high" src="https://images2.alphacoders.com/818/thumb-1920-818290.png" alt="2024年末回顧">
     
   
   <div id="header-outer">
@@ -170,7 +170,7 @@
         
         
           <a href="/" id="logo">
-            <h1 data-aos="slide-up">NHNC writeup</h1>
+            <h1 data-aos="slide-up">2024年末回顧</h1>
           </a>
         
       
@@ -186,13 +186,13 @@
 
         <div id="content">
           
-          <section id="main"><article id="post-HNHC-Writeup" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+          <section id="main"><article id="post-2024_Review" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner" data-aos="fade-up">
     <div class="article-meta">
       <div class="article-date">
-  <a href="/2024/11/24/HNHC-Writeup/" class="article-date-link" data-aos="zoom-in">
-    <time datetime="2024-11-23T16:00:00.000Z" itemprop="datePublished">2024-11-24</time>
-    <time style="display: none;" id="post-update-time">2024-12-18</time>
+  <a href="/2024/12/30/2024_Review/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2024-12-29T16:00:00.000Z" itemprop="datePublished">2024-12-30</time>
+    <time style="display: none;" id="post-update-time">2024-12-30</time>
   </a>
 </div>
 
@@ -205,25 +205,23 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
       
-        <p>這次比賽因為是戰隊辦的比賽所以我擔任出題者<br />
-來看看我出的題目的官方解吧 &gt;W&lt;</p>
-<h2 id="secret-rot13"><a class="markdownIt-Anchor" href="#secret-rot13"></a> Secret Rot13</h2>
-<p>Open the two file</p>
-<p>encrypte code</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">encrypt</span>(<span class="params">text, key</span>):</span><br><span class="line">    encrypted_text = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> i, char <span class="keyword">in</span> <span class="built_in">enumerate</span>(text):</span><br><span class="line">        offset = ((i + <span class="number">1</span> + key) * (i + <span class="number">1</span>)) % <span class="number">26</span></span><br><span class="line">        <span class="keyword">if</span> <span class="string">&#x27;A&#x27;</span> &lt;= char &lt;= <span class="string">&#x27;Z&#x27;</span>:</span><br><span class="line">            new_char = <span class="built_in">chr</span>((<span class="built_in">ord</span>(char) - <span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>) + offset) % <span class="number">26</span> + <span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>))</span><br><span class="line">        <span class="keyword">elif</span> <span class="string">&#x27;a&#x27;</span> &lt;= char &lt;= <span class="string">&#x27;z&#x27;</span>:</span><br><span class="line">            new_char = <span class="built_in">chr</span>((<span class="built_in">ord</span>(char) - <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>) + offset) % <span class="number">26</span> + <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            new_char = char</span><br><span class="line">        encrypted_text += new_char</span><br><span class="line">    <span class="keyword">return</span> encrypted_text</span><br><span class="line"></span><br><span class="line"><span class="comment"># 測試範例</span></span><br><span class="line">key = <span class="number">7</span></span><br><span class="line">plaintext = <span class="string">&quot;NHNC&#123;TEST&#125;&quot;</span></span><br><span class="line">ciphertext = encrypt(plaintext, key)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;加密後的密文:&quot;</span>, ciphertext)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>This code is let the word do ROT<br />
-so find read the code and write a code to decrypte</p>
-<p>code for decrypte</p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">decrypt</span>(<span class="params">encrypted_text, key</span>):</span><br><span class="line">    decrypted_text = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> i, char <span class="keyword">in</span> <span class="built_in">enumerate</span>(encrypted_text):</span><br><span class="line">        offset = ((i + <span class="number">1</span> + key) * (i + <span class="number">1</span>)) % <span class="number">26</span></span><br><span class="line">        <span class="keyword">if</span> <span class="string">&#x27;A&#x27;</span> &lt;= char &lt;= <span class="string">&#x27;Z&#x27;</span>:</span><br><span class="line">            new_char = <span class="built_in">chr</span>((<span class="built_in">ord</span>(char) - <span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>) - offset + <span class="number">26</span>) % <span class="number">26</span> + <span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>))</span><br><span class="line">        <span class="keyword">elif</span> <span class="string">&#x27;a&#x27;</span> &lt;= char &lt;= <span class="string">&#x27;z&#x27;</span>:</span><br><span class="line">            new_char = <span class="built_in">chr</span>((<span class="built_in">ord</span>(char) - <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>) - offset + <span class="number">26</span>) % <span class="number">26</span> + <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            new_char = char</span><br><span class="line">        decrypted_text += new_char</span><br><span class="line">    <span class="keyword">return</span> decrypted_text</span><br><span class="line"></span><br><span class="line"><span class="comment"># 加密的文字</span></span><br><span class="line">encrypted_text = <span class="string">&quot;VZRU&#123;Y0k_yd0w_Z0o_ti_rsslyxli&#125;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 嘗試所有可能的密鑰並輸出解密結果</span></span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">26</span>):  <span class="comment"># 假設密鑰範圍是 0 到 25</span></span><br><span class="line">    decrypted_text = decrypt(encrypted_text, key)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;密鑰 <span class="subst">&#123;key&#125;</span>: <span class="subst">&#123;decrypted_text&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="aes"><a class="markdownIt-Anchor" href="#aes"></a> AES？</h2>
-<p>open output.txt</p>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Enter IV: 1234567890987654</span><br><span class="line">Secret Key: 1234567890987654</span><br><span class="line">output: TkdU8sqjliuakA+nj2aEmbDf+AaJwASfPuooaKadCqg=</span><br></pre></td></tr></table></figure>
-<p>Is AES</p>
-<p>Put it into an online decrypter</p>
-<p>The flag:</p>
-<blockquote>
-<p>Flag: NHNC{Y0u_kn0w_AES}</p>
-</blockquote>
+        <h1 id="2024-年末回顧"><a class="markdownIt-Anchor" href="#2024-年末回顧"></a> 2024 年末回顧</h1>
+<h2 id="before-all"><a class="markdownIt-Anchor" href="#before-all"></a> Before All</h2>
+<p>我文筆很爛請見諒</p>
+<h2 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h2>
+<p>今年是個充實的一年會考完後就去日本玩了買了很多週邊還去看了五等分的展覽超開心的meow!!!<br />
+從日本回來後繼續學程式，然後被朋友找去開發網頁雖然我之前有寫過但還學到了超多東東順便宣傳一下 XDD <a target="_blank" rel="noopener" href="https://harutoo.com">https://harutoo.com</a> 然後遇到了改變我人生的轉機 去找表哥時順道被推薦了SITCON camp<br />
+然後就一發不可收拾了重慢慢的社群到參加各個活動 EX：HITCON CMT 等等 <s>雖然期間常常被父母罵我的成績 但whatever 不被當就好XDD</s> 好啦 然後暑假也接觸到資安（起因是被某人抓進來打CTF 從此一發不可收拾）<br />
+然後基本上學資安開始非寢忘食 也打了大大小小的CTF及國內的比賽，但我覺得我還遠遠不夠，<br />
+然後今年也成為了ICEDTEA戰隊的隊員 跟 成大資安社的成員</p>
+<p>今年的小小遺憾：<br />
+1.<s>還是單身</s><br />
+2.金盾沒進決賽<br />
+3.太晚碰資安了<br />
+4.太晚解觸社群了</p>
+<p>總之 今年過的很充實 也認識很多新朋友<br />
+希望我之後能夠更進步以及能開發更多東西</p>
+<p>祝大家新年快了 順順利利</p>
 
       
     </div>
@@ -236,7 +234,7 @@ so find read the code and write a code to decrypte</p>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/CTF/" rel="tag">CTF</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/life/" rel="tag">life</a></li></ul>
 
 
     </footer>
@@ -244,35 +242,19 @@ so find read the code and write a code to decrypte</p>
   
   <nav id="article-nav" data-aos="fade-up">
     
-      <div class="article-nav-link-wrap article-nav-link-left">
-        
-          
-          
-            <img data-src="https://i.pinimg.com/originals/48/2e/ba/482eba34bfedd2c0dc7d385d47d01eeb.jpg" data-sizes="auto" alt="THJCC-WriteUP" class="lazyload">
-          
-        
-        <a href="/2024/12/19/THJCC-WriteUp/"></a>
-        <div class="article-nav-caption">Newer</div>
-        <h3 class="article-nav-title">
-          
-            THJCC-WriteUP
-          
-        </h3>
-      </div>
-    
     
     <div class="article-nav-link-wrap article-nav-link-right">
       
         
         
-          <img data-src="https://i.pinimg.com/originals/48/2e/ba/482eba34bfedd2c0dc7d385d47d01eeb.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
+          <img data-src="https://i.pinimg.com/originals/48/2e/ba/482eba34bfedd2c0dc7d385d47d01eeb.jpg" data-sizes="auto" alt="THJCC-WriteUP" class="lazyload">
         
       
-      <a href="/2013/12/24/hello-world/"></a>
+      <a href="/2024/12/19/THJCC-WriteUp/"></a>
       <div class="article-nav-caption">Older</div>
       <h3 class="article-nav-title">
         
-          Hello World
+          THJCC-WriteUP
         
       </h3>
     </div>
@@ -297,7 +279,7 @@ so find read the code and write a code to decrypte</p>
   <h3 class="toc-title">Contents</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#secret-rot13"><span class="toc-number">1.</span> <span class="toc-text"> Secret Rot13</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aes"><span class="toc-number">2.</span> <span class="toc-text"> AES？</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2024-%E5%B9%B4%E6%9C%AB%E5%9B%9E%E9%A1%A7"><span class="toc-number">1.</span> <span class="toc-text"> 2024 年末回顧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#before-all"><span class="toc-number">1.1.</span> <span class="toc-text"> Before All</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-number">1.2.</span> <span class="toc-text"> 正文</span></a></li></ol></li></ol>
       
   </div>
 </div>
@@ -310,7 +292,7 @@ so find read the code and write a code to decrypte</p>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>Posts</div>
-    <div class="sidebar-state-number">3</div>
+    <div class="sidebar-state-number">4</div>
   </div>
   <div class="sidebar-state-category">
     <div>Categories</div>
@@ -318,7 +300,7 @@ so find read the code and write a code to decrypte</p>
   </div>
   <div class="sidebar-state-tag">
     <div>Tags</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -398,10 +380,10 @@ so find read the code and write a code to decrypte</p>
     
       <div>
         <span class="icon-brush"></span>
-        1.4k
+        1.8k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:08
+        00:09
       </div>
     
     
@@ -433,7 +415,7 @@ so find read the code and write a code to decrypte</p>
   <h3 class="toc-title">Contents</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#secret-rot13"><span class="toc-number">1.</span> <span class="toc-text"> Secret Rot13</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aes"><span class="toc-number">2.</span> <span class="toc-text"> AES？</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2024-%E5%B9%B4%E6%9C%AB%E5%9B%9E%E9%A1%A7"><span class="toc-number">1.</span> <span class="toc-text"> 2024 年末回顧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#before-all"><span class="toc-number">1.1.</span> <span class="toc-text"> Before All</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-number">1.2.</span> <span class="toc-text"> 正文</span></a></li></ol></li></ol>
       
   </div>
 </div>
@@ -446,7 +428,7 @@ so find read the code and write a code to decrypte</p>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>Posts</div>
-    <div class="sidebar-state-number">3</div>
+    <div class="sidebar-state-number">4</div>
   </div>
   <div class="sidebar-state-category">
     <div>Categories</div>
@@ -454,7 +436,7 @@ so find read the code and write a code to decrypte</p>
   </div>
   <div class="sidebar-state-tag">
     <div>Tags</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">

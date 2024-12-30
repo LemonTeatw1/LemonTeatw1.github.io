@@ -6,7 +6,7 @@
   <link href="http://alvin-tw.me/atom.xml" rel="self"/>
   
   <link href="http://alvin-tw.me/"/>
-  <updated>2024-12-19T15:02:18.186Z</updated>
+  <updated>2024-12-30T15:14:03.339Z</updated>
   <id>http://alvin-tw.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2024年末回顧</title>
+    <link href="http://alvin-tw.me/2024/12/30/2024_Review/"/>
+    <id>http://alvin-tw.me/2024/12/30/2024_Review/</id>
+    <published>2024-12-29T16:00:00.000Z</published>
+    <updated>2024-12-30T15:14:03.339Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2024-年末回顧&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#2024-年末回顧&quot;&gt;&lt;/a&gt; 2024 年末回顧&lt;/h1&gt;
+&lt;h2 id=&quot;before-all&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="life" scheme="http://alvin-tw.me/tags/life/"/>
+    
+  </entry>
   
   <entry>
     <title>THJCC-WriteUP</title>
@@ -42,8 +66,8 @@
   
   <entry>
     <title>NHNC writeup</title>
-    <link href="http://alvin-tw.me/2024/11/24/HNHC-Writeup/"/>
-    <id>http://alvin-tw.me/2024/11/24/HNHC-Writeup/</id>
+    <link href="http://alvin-tw.me/2024/11/24/NHNC-Writeup/"/>
+    <id>http://alvin-tw.me/2024/11/24/NHNC-Writeup/</id>
     <published>2024-11-23T16:00:00.000Z</published>
     <updated>2024-12-18T11:07:44.593Z</updated>
     
