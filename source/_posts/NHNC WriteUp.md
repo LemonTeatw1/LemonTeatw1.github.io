@@ -1,6 +1,7 @@
 title: NHNC offical writeup
 date: 2024-11-24 17:49:32
 tags: CTF
+cover:
 ---
 
 # NHNC LemonTea writeup

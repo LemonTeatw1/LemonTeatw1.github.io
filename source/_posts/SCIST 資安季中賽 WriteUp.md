@@ -1,6 +1,7 @@
 title: SCIST 資安季中賽write up
 date: 2025-2-18 17:49:32
 tags: CTF
+cover:
 ---
 
 # SCIST 資安季中賽write up
