@@ -101,7 +101,9 @@ theme: reimu
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: git@github.com:LemonTeatw1/LemonTeatw1.github.io.git
+  branch: main
 
 feed:
   enable: true
