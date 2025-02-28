@@ -1,0 +1,81 @@
+<% if (home === true) { %>
+  <% if (theme.home_categories?.enable) { %>
+    <div class="post-categories-wrapper" data-aos="<%= theme.animation.options.home.post %>">
+      <% for (let content of theme.home_categories.content) { %>
+        <% if (content.categories) { %>
+        <div class="post-categories-wrap">
+          <% let c = parseHomeCategories(content.categories); %>
+          <a class="post-link" href="<%= url_for_lang(c.url, {relative: false}) %>" aria-label=""></a>
+          <div class="post-categories-cover">
+            <% if (content.cover) { %>
+              <img data-src="<%- url_for(content.cover, {relative: false}) %>" data-sizes="auto" alt="<%= c.name %>" class="lazyload">
+            <% } else { %>
+              <% let cover = randomCover(); %>
+              <% if (cover) { %>
+                <img data-src="<%= cover %>" data-sizes="auto" alt="<%= c.name %>" class="lazyload">
+              <% } else { %>
+                <img data-src="<%- url_for(theme.banner, {relative: false}) %>" data-sizes="auto" alt="<%= c.name %>" class="lazyload">
+              <% } %>
+            <% } %>
+            <h2><%= c.name %></h2>
+            <h3><%= _p('home_categories.count', c.count) %></h3>
+          </div>
+        </div>
+        <% } %>
+      <% } %>
+    </div>
+  <% } %>
+  <% page.posts.each((post, i) => { %>
+    <% if (!post.lang) { %>
+      <%- partial('post', {post: post, even: i % 2 === 0}) %>
+    <% } %>
+  <% }) %>
+<% } else { %>
+<div class="archives-outer-wrap" data-aos="<%= theme.animation.options.archive.whole %>">
+  <div class="tag-wrap">
+    <% site.tags.each((tag, i) => { %>
+      <div class="archives-tag-list-item" data-aos="<%= theme.animation.options.archive.tag %>">
+        <a class="archives-tag-list-link" href="<%- url_for_lang(tag.path) %>"><%= tag.name %></a>
+      </div>
+    <% }) %>
+  </div>
+  <div class="category-wrap">
+    <% site.categories.each((cagetory, i) => { %>
+      <div class="archives-category-list-item" data-aos="<%= theme.animation.options.archive.category %>">
+        <a class="archives-category-list-link" href="<%- url_for_lang(cagetory.path) %>"><%= cagetory.name %></a>
+      </div>
+    <% }) %>
+  </div>
+  <% var last; %>
+  <% page.posts.each((post, i) => { %>
+    <% if (post.lang) { return; } %>
+    <% var year = post.date.year(); %>
+    <% if (last != year) { %>
+      <% if (last != null) { %>
+        </section>
+      <% } %>
+      <% last = year; %>
+      <section class="archives-wrap" data-aos="<%= theme.animation.options.archive.section %>">
+        <div class="archive-year-wrap">
+          <a href="<%- url_for_lang(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
+        </div>
+        <ul>
+          <% } %>
+          <%- partial('archive-post', {post: post}) %>
+          <% }) %>
+          <% if (page.posts.length) { %>
+        </ul>
+      </section>
+  <% } %>
+  </div>
+<% } %>
+<% if (page.total > 1) { %>
+  <nav id="page-nav" data-aos="<%= theme.animation.options.archive.nav %>">
+    <% let prev_text = "&laquo; " + __('prev');let next_text = __('next') + " &raquo;" %>
+    <%- paginator({
+          prev_text: prev_text,
+          next_text: next_text,
+          escape: false
+      }) %>
+  </nav>
+<% } %>

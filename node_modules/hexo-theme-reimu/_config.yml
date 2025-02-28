@@ -1,0 +1,669 @@
+########################################
+# Basic Configuration
+########################################
+theme_version_check: true
+theme_config_check: true
+# main menu navigation
+# for more icon information, please visit https://github.com/D-Sketon/hexo-theme-reimu/issues/30
+menu:
+  - name: home
+    url: /
+    icon: # default use taichi icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1'
+  - name: archives
+    url: /archives
+    icon:
+  - name: about
+    url: /about
+    icon:
+  - name: friend
+    url: /friend
+    icon:
+
+banner: "/images/banner.webp" # which means themes/reimu/source/images/banner.webp
+# You can also write it in the form of the following url
+# banner: "https://example.com"
+
+# If you want to use the srcset attribute, please enable it
+banner_srcset:
+  enable: false
+  srcset:
+    - src: "/images/banner-600w.webp"
+      media: "(max-width: 479px)"
+    - src: "/images/banner-800w.webp"
+      media: "(max-width: 799px)"
+    - src: "/images/banner.webp"
+      media: "(min-width: 800px)"
+
+favicon: "/images/favicon.ico" # which means themes/reimu/source/images/favicon.ico
+# You can also write it in the form of the following url
+# favicon: "https://example.com"
+
+avatar: "avatar.webp" # which means source/_data/avatar/avatar.webp
+
+# Open Graph
+# see https://hexo.io/docs/helpers#open-graph
+open_graph:
+  enable: true
+  options:
+    #twitter_card: <twitter:card>
+    #twitter_id: <twitter:creator>
+    #twitter_site: <twitter:site>
+    #twitter_image: <twitter:image>
+    #google_plus: <g+:profile_link>
+    #fb_admins: <fb:admin_id>
+    #fb_app_id: <fb:app_id>
+    default_og_image: /images/banner.webp # the default og:image for Open Graph, support absolute path
+
+# Content
+excerpt_link: Read More
+
+# RSS
+# need https://github.com/hexojs/hexo-generator-feed
+rss: atom.xml
+
+# Footer copyright
+copyright:
+# Need help choosing? Please see...
+# https://creativecommons.org/choose/
+# https://choosealicense.com/
+# You can use pug like below...
+# copyright: |-
+#   <div style="flex-direction:column;align-items: center;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+#   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
+
+footer:
+  since: 2020 # 2020-current year
+  powered: true
+  count: true # show word count and reading time
+  busuanzi: true
+  icon:
+    url: "../images/taichi.png" # this path is relative to the css/style.css, so it needs to go up one level to reach the images folder
+    rotate: true
+    mask: true # whether to use the images as a mask
+
+# Sidebar
+sidebar: right
+
+social:
+  # email: mailto:xxx@gmail.com
+  # github: https://github.com/yourname
+  # google: https://plus.google.com/yourname
+  # twitter: https://twitter.com/yourname
+  # facebook: https://www.facebook.com/yourname
+  # instagram: https://www.instagram.com/yourname
+  # linkedin: https://www.linkedin.com/in/yourname
+  # pinterest: https://www.pinterest.com/yourname
+  # youtube: https://www.youtube.com/channel/yourname
+  # vimeo: https://vimeo.com/yourname
+  # flickr: https://www.flickr.com/photos/yourname
+  # dribbble: https://dribbble.com/yourname
+  # behance: https://www.behance.net/yourname
+  # bilibili: https://space.bilibili.com/yourname
+  # weibo: https://weibo.com/yourname
+  # zhihu: https://www.zhihu.com/people/yourname
+  # reddit: https://www.reddit.com/user/yourname
+  # tumblr: https://yourname.tumblr.com
+  # medium: https://medium.com/@yourname
+  # deviantart: https://yourname.deviantart.com
+  # stackoverflow: https://stackoverflow.com/users/yourname
+  # keybase: https://keybase.io/yourname
+  # telegram: https://t.me/yourname
+  # discord: https://discordapp.com/users/yourname
+  # steam: https://steamcommunity.com/id/yourname
+
+widgets:
+  # - category
+  # - tag
+  # - tagcloud
+  # - archive
+  # - recent_posts
+
+# Widget behavior
+archive_type: "monthly"
+show_count: false
+recent_posts_limits: 5
+
+i18n:
+  enable: false
+  type: [page, post]
+  generator: [archive, category, tag, index]
+  languages: [zh-CN, en]
+
+########################################
+# CSS
+########################################
+
+anchor_icon: # default use '#' icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1'
+
+reimu_cursor:
+  enable: true
+  cursor:
+    default: ../images/cursor/reimu-cursor-default.png  # this path is relative to the css/style.css, so it needs to go up one level to reach the images folder
+    pointer: ../images/cursor/reimu-cursor-pointer.png
+    text: ../images/cursor/reimu-cursor-text.png
+
+# set to false to enable fontawesome
+icon_font: 4552607_0khxww3tj3q9
+
+# https://fonts.google.com/
+# Google Fonts, higher priority than local_font
+font:
+  article:
+    - Mulish
+    - Noto Serif SC
+  code:
+    # - Ubuntu Mono
+    # - Source Code Pro
+    # - JetBrains Mono
+
+# Local FallBack Font
+local_font:
+  article:
+    - "-apple-system"
+    - PingFang SC
+    - Microsoft YaHei
+    - sans-serif
+  code:
+    - Menlo
+    - Monaco
+    - Consolas
+    - monospace
+
+dark_mode:
+  # true means that the dark mode is enabled by default
+  # false means that the dark mode is disabled by default
+  # auto means that the dark mode is automatically switched according to the system settings
+  enable: auto # true | false | auto
+
+# need https://github.com/D-Sketon/hexo-renderer-markdown-it-plus
+markdown:
+  container: false # whether to enable the container style
+
+########################################
+# Markdown Display
+########################################
+
+# need https://github.com/D-Sketon/hexo-renderer-markdown-it-plus
+math:
+  enable: false
+  # If you don't want to use it, please set `autoRender` to true to enable browser rendering
+  katex:
+    enable: true
+    autoRender: false # whether to render the math in the browser, disabled by default
+  mathjax:
+    enable: false
+    options: # see https://docs.mathjax.org/en/latest/web/configuration.html
+      {
+        tex:
+          {
+            tags: "ams",
+            useLabelIds: true,
+            inlineMath: [["$", "$"], ['\\(', '\\)']],
+            displayMath: [["$$", "$$"], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            autoload: { color: [], colorv2: ["color"] },
+            packages: { "[+]": ["noerrors"] },
+          },
+        options:
+          {
+            skipHtmlTags:
+              ["script", "noscript", "style", "textarea", "pre", "code"],
+            ignoreHtmlClass: "tex2jax_ignore",
+            processHtmlClass: "tex2jax_process",
+          },
+        loader: { load: ["input/asciimath", "[tex]/noerrors"] },
+      }
+
+# mermaid url https://github.com/knsv/mermaid
+# need https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
+mermaid:
+  enable: false
+
+code_block:
+  # whether to expand the code block by default
+  # true means expand all code blocks by default
+  # false means collapse all code blocks by default
+  # number means collapse the code block by default when the number of lines exceeds the specified value
+  expand: true
+
+########################################
+# Analytics
+########################################
+
+baidu_analytics: false
+google_analytics: false
+clarity: false
+
+########################################
+# Comment system
+########################################
+
+# valine comment system. https://valine.js.org
+# version 1.5.1
+# notify and verify have been deprecated
+valine:
+  enable: false # if you want to use valine,please set this value is true
+  appId: # leancloud application app id
+  appKey: # leancloud application app key
+  pageSize: 10 # comment list page size
+  avatar: mp # gravatar style https://valine.js.org/#/avatar
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail,link #valine comment header info
+  recordIP: true # whether to record the IP address of the commenters
+  highlight: true # whether to highlight the code blocks
+  visitor: false # whether to display the number of visitors
+
+# https://waline.js.org/
+# version 2.15.8
+waline:
+  enable: false
+  serverURL:
+  lang: zh-CN
+  locale: {} # https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
+  emoji:
+    - https://unpkg.com/@waline/emojis@1.2.0/weibo
+    - https://unpkg.com/@waline/emojis@1.2.0/alus
+    - https://unpkg.com/@waline/emojis@1.2.0/bilibili
+    - https://unpkg.com/@waline/emojis@1.2.0/qq
+    - https://unpkg.com/@waline/emojis@1.2.0/tieba
+    - https://unpkg.com/@waline/emojis@1.2.0/tw-emoji
+  meta:
+    - nick
+    - mail
+    - link
+  requiredMeta:
+    - nick
+    - mail
+  wordLimit: 0
+  pageSize: 10
+  pageview: true
+
+# https://twikoo.js.org
+twikoo:
+  enable: false
+  envId: # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  region:
+
+# https://github.com/gitalk/gitalk/blob/master/readme-cn.md
+gitalk:
+  enable: false
+  clientID:
+  clientSecret:
+  repo:
+  owner:
+  admin:
+  md5: false
+
+# https://giscus.app/zh-CN
+giscus:
+  enable: false
+  repo:
+  repoId:
+  category:
+  categoryId:
+  mapping: mapping
+  strict: 0
+  reactionsEnabled: 1
+  emitMetadata: 0
+  inputPosition: bottom
+  # commentTheme: light # this option is invalid, because the theme is set by the theme itself
+  lang: zh-CN
+
+########################################
+# Search
+########################################
+
+# need https://github.com/LouisBarranqueiro/hexo-algoliasearch
+# please add the following config in your _config.yml
+# algolia:
+#   appId: 'your applicationID'
+#   apiKey: 'your apiKey'
+#   adminApiKey: 'your adminApiKey'
+#   indexName: 'your indexName'
+#   chunkSize: 5000
+#   fields:
+#     - content:strip:truncate,0,500
+#     - excerpt:strip
+#     - gallery
+#     - permalink
+#     - photos
+#     - slug
+#     - tags
+#     - title
+algolia_search:
+  enable: false
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: "搜索....."
+    hits_empty: "未发现与 「${query}」相关内容"
+    hits_stats: "找到${hits}条结果（用时 ${time} ms）"
+
+# need https://github.com/wzpan/hexo-generator-search
+# please add the following config in your _config.yml
+# search:
+#   path: search.json # The filename must be search.json
+#   field: post
+#   content: true
+generator_search:
+  enable: false
+
+########################################
+# Animation
+########################################
+
+# Loader animation
+preloader:
+  enable: true
+  text: 少女祈祷中...
+  icon: # default use inline svg for fast speed, you can use a image url, like '/images/taichi.png'
+
+# see https://github.com/D-Sketon/aos.js
+animation:
+  enable: true
+  options:
+    header:
+      title: slide-up
+      subTitle: slide-down
+    home:
+      post: fade-up
+      widget: fade-up
+      sidebar: fade-up
+    article:
+      whole: fade-up
+      date: zoom-in
+      category: zoom-in
+      tag: zoom-in
+      comment: zoom-in
+      reading: zoom-in
+      nav: fade-up
+    archive:
+      whole: fade-up
+      tag: zoom-in
+      category: zoom-in
+      section: fade-up
+      nav: fade-up
+
+# see https://github.com/D-Sketon/mouse-firework
+firework:
+  enable: true
+  options:
+    excludeElements: ["a", "button"]
+    particles:
+      - shape: circle
+        move: ["emit"]
+        easing: easeOutExpo
+        colors: ["#ff5252", "#ff7c7c", "#ffafaf", "#ffd0d0"]
+        number: 20
+        duration: [1200, 1800]
+        shapeOptions:
+          radius: [16, 32]
+          alpha: [0.3, 0.5]
+      - shape: circle
+        move: ["diffuse"]
+        easing: easeOutExpo
+        colors: ["#ff0000"]
+        number: 1
+        duration: [1200, 1800]
+        shapeOptions:
+          radius: 20
+          alpha: [0.2, 0.5]
+          lineWidth: 6
+
+########################################
+# Extended features
+########################################
+
+# Clipboard configuration
+clipboard:
+  success: 复制成功(*^▽^*)
+  fail: 复制失败 (ﾟ⊿ﾟ)ﾂ
+  copyright: # whether to add a copyright for the clipped content
+    enable: false
+    count: 50 # The number of characters when the copyright is displayed
+    content: 本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！
+
+# show categories card on home page
+home_categories:
+  enable: false
+  content:
+    - categories: # string (single-layer category) or array (multi-layer category)
+      cover: # empty means random cover
+    - categories:
+      cover:
+
+# whether to display the notification when the article is outdated
+outdate:
+  enable: false
+  daysAgo: 180 # The number of days after which the article is considered outdated
+  message: 本文最后更新于 {time}，请注意文中内容可能已经发生变化。
+
+# Sponsor
+sponsor:
+  enable: false
+  tip: 请作者喝杯咖啡吧！
+  icon:
+    url: "../images/taichi.png" # this path is relative to the css/style.css, so it needs to go up one level to reach the images folder
+    rotate: true
+    mask: true # whether to use the images as a mask
+  qr:
+    # - name: 支付宝
+    #   src: "/sponsor/alipay.jpg"
+    # - name: 微信
+    #   src: "/sponsor/wechat.png"
+
+# ICP 备案
+icp:
+  icpnumber: # ICP备案号
+  beian: # 网安备案号
+  recordcode: # 网安备案链接中的recordcode参数
+
+# show the copyright below each article
+article_copyright:
+  enable: false
+  content:
+    author: true
+    link: true
+    title: false
+    date: false
+    updated: false
+    license: true
+
+# Back To Top
+top:
+  enable: true
+  position: right # left or right
+  icon:
+    url: "../images/taichi.png" # this path is relative to the css/style.css, so it needs to go up one level to reach the images folder
+    rotate: true
+    mask: true # whether to use the images as a mask
+
+share:
+  # - facebook
+  # - twitter
+  # - linkedin
+  # - reddit
+  # - weibo
+  # - qq
+  # - weixin
+
+########################################
+# Experimental features
+########################################
+
+# Experimental, may have a lot of bugs, open with caution!
+pjax:
+  enable: false
+
+# Experimental
+# https://github.com/GoogleChromeLabs/quicklink
+quicklink:
+  enable: false
+  # The `requestIdleCallback` timeout, in milliseconds.
+  timeout: 3000
+  # Whether or not the URLs within the options.el container should be treated as high priority.
+  # When true, quicklink will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
+  priority: true
+  # Determine if a URL should be prefetched.
+  # Only support string
+  ignores: []
+
+# https://github.com/CodeByZach/pace
+pace:
+  enable: true
+
+# Experimental
+service_worker:
+  enable: false
+
+# Experimental
+live2d:
+  enable: false
+  position: left # left or right
+
+# Experimental
+live2d_widgets:
+  enable: false
+  position: left # left or right
+
+# Experimental
+# Please turn on pjax to use this feature
+player:
+  # if you enable meting, you must enable aplayer first
+  aplayer:
+    # https://github.com/DIYgod/APlayer
+    enable: false
+    options:
+      audio: []
+      fixed:
+      autoplay:
+      loop:
+      order:
+      preload: 
+      volume:
+      mutex:
+      listFolded:
+      lrcType:
+  meting:
+    # https://github.com/metowolf/MetingJS
+    # if you want to use meting, please enable aplayer first
+    enable: false
+    meting_api: # custom api
+    options:
+      id: 2265921590
+      server: netease
+      type: playlist
+      auto:
+
+########################################
+# Vendor
+########################################
+
+# Dependent cdn links
+# If you change the version of a js library, be sure to modify the corresponding integrity value
+vendor:
+  cdn_jsdelivr_gh: https://cdn.jsdelivr.net/gh/
+  cdn_jsdelivr_npm: https://cdn.jsdelivr.net/npm/
+  fastly_jsdelivr_gh: https://fastly.jsdelivr.net/gh/
+  fastly_jsdelivr_npm: https://fastly.jsdelivr.net/npm/
+  unpkg: https://unpkg.com/
+  webcache: https://npm.webcache.cn/
+  js:
+    clipboard:
+      src: webcache|clipboard@2.0.11/dist/clipboard.min.js
+      integrity: sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q
+    lazysizes:
+      src: webcache|lazysizes@5.3.2/lazysizes.min.js
+      integrity: sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf+e
+    photoswipe:
+      src: webcache|photoswipe@5.4.4/dist/photoswipe.esm.min.js
+      integrity: sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s
+    photoswipe_lightbox:
+      src: webcache|photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js
+      integrity: sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/
+    valine:
+      src: webcache|valine@1.5.1/dist/Valine.min.js
+      integrity: sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE+s5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn
+    waline:
+      src: webcache|@waline/client@2.15.8/dist/waline.mjs
+      integrity: sha384-9sbqJjrfGjbkI6/PI4nU/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH/KinBEAZII/5
+    twikoo:
+      src: webcache|twikoo@1.6.16/dist/twikoo.all.min.js
+      integrity: sha384-lDHsr5aZmkMS0eKnsUu6e9RWP+dRmn7sgjRAKGOAoXfMyzbUK6Qi86zZK7R+KvRV
+    gitalk:
+      src: webcache|gitalk@1.8.0/dist/gitalk.min.js
+      integrity: sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU/lcEH5O8eVbSDhbPwsiVUTp/aGX/z/5EuMA
+    busuanzi:
+      src: webcache|busuanzi@2.3.0/bsz.pure.mini.js
+      integrity: sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S
+    algolia:
+      src: webcache|algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js
+      integrity: sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S+jQz7ZBtQXnsXmD+9jDOOY4cL6dCPzlrk
+    instantsearch:
+      src: webcache|instantsearch.js@4.56.1/dist/instantsearch.production.min.js
+      integrity: sha384-hHJCflT4KBLQyHfKO9vpstIcFKn/Y+KHTORelMMEn7mOp2AVPp+7fr03dLgZiV3J
+    pace:
+      src: webcache|pace-js@1.2.4/pace.min.js
+      integrity: sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8
+    mermaid:
+      src: webcache|mermaid@9.4.3/dist/mermaid.min.js
+      integrity: sha384-aG3Gai4tbCHF0iXo48HwLoOZyut7mBl50oMC9GD1m75xyHfJDv6w8hD/kZRD47aJ
+    firework:
+      src: webcache|mouse-firework@0.1.0/dist/index.umd.js
+      integrity: sha384-KM6i7tu43nYd6e0beIljxHMC5tZc58XBDu7pPA58w50h18Jsx7gLdimfS09RXlKv
+    pjax:
+      src: webcache|theme-shokax-pjax@0.0.3/dist/index.umd.js
+      integrity: sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE/jMSCxD+jAPU55x/jj3wlf
+    live2d:
+      base: fastly_jsdelivr_gh|D-Sketon/plugin-live2d/
+      js: fastly_jsdelivr_gh|D-Sketon/plugin-live2d/js/live2d-autoload.js
+    live2d_widgets:
+      src: webcache|live2d-widgets@0.9.0/autoload.js
+      integrity: sha384-poTN7wN/SqNhQqo3jdFeX20ikddWeFGkUkDEzsKjgH/ez8aQLn81oI0Cw6q5xNyB
+    md5:
+      src: webcache|blueimp-md5@2.19.0/js/md5.min.js
+      integrity: sha384-JmVtRz6RWiXnA14QbIOJzPuU3MidULOpBP66deeLLyyoF4Tr/gZlbkHkL6vTthxH
+    quicklink:
+      src: webcache|quicklink@2.3.0/dist/quicklink.umd.js
+      integrity: sha384-aD7FsuQkS1ohgFKY41fJfeA+Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS
+    katex:
+      src: webcache|katex@0.16.11/dist/katex.min.js
+      integrity: sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg
+    katex_auto_render:
+      src: webcache|katex@0.16.11/dist/contrib/auto-render.min.js
+      integrity: sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk
+    mathjax:
+      src: webcache|mathjax@3.2.2/es5/tex-mml-chtml.js
+      integrity: sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei
+    aplayer:
+      src: webcache|aplayer@1.10.1/dist/APlayer.min.js
+      integrity: sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL/aORyw+5+HZoU6e
+    meting:
+      src: webcache|meting@2.0.1/dist/Meting.min.js
+      integrity: sha384-ASVlpKF80A22OXTK3tfEjZm1EL6uFMKIC4p8+0maanw1S/IyB+Y4JG+ZDU7GpKE8
+    qrcode:
+      src: webcache|qrcode@1.4.4/build/qrcode.min.js
+      integrity: sha384-0RsG1yo/crf/1Qc14sho26SXXOTngNCjgJw7fuvXBt9W/OChF/Ijx+aUuBDqQwEk
+    html2image:
+      src: webcache|html-to-image@1.11.11/dist/html-to-image.js
+      integrity: sha384-UbfRVKN3/elS1r7JcK2FhmPP+KlJ4CvYwbyYD7tH+uTkbT9bNJr9eJeQ0FoFbAgz
+    dompurify:
+      src: webcache|dompurify@3.2.4/dist/purify.min.js
+      integrity: sha384-eEu5CTj3qGvu9PdJuS+YlkNi7d2XxQROAFYOr59zgObtlcux1ae1Il3u7jvdCSWu
+  css:
+    photoswipe: webcache|photoswipe@5.4.4/dist/photoswipe.css
+    katex: webcache|katex@0.16.11/dist/katex.min.css
+    waline: webcache|@waline/client@2.15.8/dist/waline.css
+    gitalk: webcache|gitalk/dist/gitalk.css
+    fontawesome:
+      high_priority:
+        - webcache|@fortawesome/fontawesome-free@6.5.1/css/regular.min.css
+        - webcache|@fortawesome/fontawesome-free@6.5.1/css/solid.min.css
+      low_priority:
+        - webcache|@fortawesome/fontawesome-free@6.5.1/css/brands.min.css
+        - webcache|@fortawesome/fontawesome-free@6.5.1/css/v5-font-face.min.css
+        - webcache|@fortawesome/fontawesome-free@6.5.1/css/v4-font-face.min.css
+    aos: webcache|@reimujs/aos@0.1.0/dist/aos.css
+    aplayer: webcache|aplayer@1.10.1/dist/APlayer.min.css

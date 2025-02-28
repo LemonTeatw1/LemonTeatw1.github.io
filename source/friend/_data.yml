@@ -1,0 +1,29 @@
+- name: Whale
+  url: https://blog.whale-tw.com/
+  desc: whale
+  image: https://avatars.githubusercontent.com/u/85293841?v=4
+
+- name: Ummit
+  url: https://links.ummit.dev/
+  desc: Ummit
+  image: https://links.ummit.dev/cute.jpg
+
+- name: 小麥
+  url: https://worldofwheat.github.io/
+  desc: 小麥
+  image: https://worldofwheat.github.io/img/avatar_hu10728238705677246849.png
+
+- name: Chilin
+  url: https://neko70.net/
+  desc: Chilin
+  image: https://neko70.net/images/avatar.jpg
+
+- name: Frank
+  url: https://frankk.uk/about
+  desc: Frank
+  image: https://avatars.githubusercontent.com/u/135571477?v=4
+
+- name: 堇姬Naup
+  url: https://naupjjin.github.io/
+  desc: 一隻4002歲的簑羽鶴仙
+  image: https://naupjjin.github.io/avatar/avatar.webp
