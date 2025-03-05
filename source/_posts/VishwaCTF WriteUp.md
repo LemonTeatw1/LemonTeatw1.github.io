@@ -1,5 +1,5 @@
 title: VishwaCTF'25 Write Up
-date: 2024-3-5 11:39:00
+date: 2025-3-5 11:39:00
 tags: CTF
 cover:
 ---
