@@ -1,4 +1,4 @@
-title: Devcore Conference 回顧
+title: DEVCORE CONFERENCE 回顧
 date: 2025-3-17 22:07:32
 tags: Life
 ---
@@ -22,7 +22,7 @@ tags: Life
 
 
 ## After ALL 
-Devcore Conference 我聽到了很多議程 也學到了很多東西
+DEVCORE CONFERENCE 我聽到了很多議程 也學到了很多東西
 
 然後議程的筆記我可能之後在發 還沒整理好XDD
 
