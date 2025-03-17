@@ -1,6 +1,6 @@
 title: THJCC writeup
 date: 2024-12-19 17:49:32
-tags: CTF
+tags: CTF 
 ---
 
 # THJCC writeup
