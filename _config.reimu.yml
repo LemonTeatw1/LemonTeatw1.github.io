@@ -288,13 +288,13 @@ twikoo:
 
 # https://github.com/gitalk/gitalk/blob/master/readme-cn.md
 gitalk:
-  enable: false
-  clientID:
+  enable: true
+  clientID: 
   clientSecret:
-  repo:
-  owner:
-  admin:
-  md5: false
+  repo: https://github.com/LemonTeatw1/LemonTeatw1.github.io
+  owner: LemonTeatw1
+  admin: LemonTeatw1
+  md5: true
 
 # https://giscus.app/zh-CN
 giscus:
@@ -357,7 +357,7 @@ generator_search:
 # Loader animation
 preloader:
   enable: true
-  text: Loding....
+  text: Loading....
   icon: # default use inline svg for fast speed, you can use a image url, like '/images/taichi.png'
 
 # see https://github.com/D-Sketon/aos.js
